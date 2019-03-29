@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>Document</title>
+  <script>
+      window.onload = function (){
+        function makePhrase() {
+        var names = ['陈泽宇','杨克琴','郭懿婷','陈欣楚','杨心怡','吴倩雯','龚佳怡','李可新','陆心怡',
+                     '张璐','潘梦情','田金丰','葛梦蝶','刘祎婷','沈宇峰','王达','李一鸣','徐志豪','孙睿褀','徐杨',
+                     '濮徐杰','陈卓豪','王昱','林超凡','孔易飞','王诚礼','杨凤旗','王韫韬','吴策','顾强','顾强','薛宇成',
+                     '俞浩','陈李鹏','徐超','顾伟豪','王钦鹏','孙权','潘铖','朱铭杨','张程','杨吉']
+        var times = ['八点','十点','十二点','十四点']
+        var places = ['在宿舍','在操场','在篮球场','在教室']
+        var actives = ['吃饭','上课','打球','看书','聊天']
+  
+        //var land1 = chooseRandStrInArray(names)
+        //var land2 = chooseRandStrInArray(times)
+        //var land3 = chooseRandStrInArray(places)
+        //var land4 = chooseRandStrInArray(actives)
+  
+        var phrase = chooseRandStrInArray(names) + chooseRandStrInArray(times) + chooseRandStrInArray(places) + chooseRandStrInArray(actives)
+        document.write(phrase)
+  
+        function chooseRandStrInArray(array){
+          return array[Math.floor(Math.random() * array.length)]
+        }
+      }
+      makePhrase()
+      }
+    </script>
+</head>
+<body>
+</body>
+</html>
